@@ -34,7 +34,7 @@ export default {
       isPlaying:false,
   songs:[
     {
-      title:"Am I Wrong",
+     title:"Am I Wrong",
       artist:"Nico-Vinz",
       src: require("/home/aly/Desktop/MusicApp-VueJS/musi/src/assets/nico-vinz-am-i-wrong-gryffin-remix.mp3"),
       },
@@ -101,9 +101,16 @@ export default {
   margin:0;
   padding:0;
   box-sizing: border-box;
+  
   }
 body{
   font-family: monospace;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    padding: 3rem;
+    background-color: black;
   }
 header{
   display: flex;
@@ -112,23 +119,34 @@ header{
   padding:3rem;
   background-color: #44ffd2;
   color:white;
+      border-radius: 10px;
+
   }
   main{
-    height:20rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: monospace;
+        height: 20rem;
+}
+
+
     }
+   
     section  {
       color: white;
       background-color: #616163;
-     height: 10rem;
-    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+        width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+        border-radius: 10px;
+
     }
     section .controls{
       display: flex;
@@ -138,13 +156,24 @@ header{
     }
     section .controls button{
       padding:0.5em;
+      color:white;
       border-radius: 10px;
       border:none;
-      background-color: #DAF5FF;
-      width:10%;
+      background-color:#616163 ;
+      width:20%;
+      box-shadow:  20px 20px 60px #525254, 
+             -20px -20px 60px #707072;
     }
     section .controls button:hover{
       background-color: #44ffd2;
     }
-
+    .playlist{
+      height:8rem;
+      }
+.playlist button{
+  height:2rem;
+  border-radius:5px;
+  border:none;
+  background-color: #FFBFA0;
+  }
 </style>
